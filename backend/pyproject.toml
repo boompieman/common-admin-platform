@@ -1,0 +1,25 @@
+[project]
+name = "common-admin-platform-backend"
+version = "0.1.0"
+description = "Product-neutral account, permission, usage, and API administration service"
+requires-python = ">=3.12"
+dependencies = [
+    "dj-database-url>=3.0.1",
+    "django>=5.2,<6",
+    "django-cors-headers>=4.7.0",
+    "djangorestframework>=3.16.0",
+    "drf-spectacular>=0.28.0",
+    "psycopg[binary]>=3.2.9",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.12.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
