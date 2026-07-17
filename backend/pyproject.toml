@@ -9,7 +9,7 @@ dependencies = [
     "django-cors-headers>=4.7.0",
     "djangorestframework>=3.16.0",
     "drf-spectacular>=0.28.0",
-    "psycopg[binary]>=3.2.9",
+    "psycopg[binary]>=3.3.4",
 ]
 
 [dependency-groups]
