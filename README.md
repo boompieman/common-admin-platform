@@ -24,7 +24,8 @@ models or API clients.
 
 ## Security model
 
-- No built-in usernames, passwords, tokens, API keys, or production URLs.
+- No built-in application users or production credentials. Values in
+  `.env.example` are explicit placeholders for local setup.
 - Authentication uses Django REST Framework tokens.
 - Every administration endpoint requires an authenticated staff user.
 - The backend refuses to start with the development secret when
